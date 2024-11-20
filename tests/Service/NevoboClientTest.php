@@ -2,6 +2,7 @@
 
 namespace Punch\NevoboBundle\Tests\Service;
 
+use PHPUnit\Framework\TestCase;
 use Punch\NevoboBundle\PunchNevoboBundle;
 use Punch\NevoboBundle\Service\NevoboClient;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -9,14 +10,14 @@ use Symfony\Component\HttpKernel\Kernel;
 
 class PunchNevoboBundleTestingKernel extends Kernel
 {
-    public function registerBundles()
+    public function registerBundles(): array
     {
         return [
             new PunchNevoboBundle(),
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
     }
 
