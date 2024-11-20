@@ -6,17 +6,18 @@ use Punch\NevoboBundle\PunchNevoboBundle;
 use Punch\NevoboBundle\Service\NevoboClient;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
+use PHPUnit\Framework\TestCase;
 
 class PunchNevoboBundleTestingKernel extends Kernel
 {
-    public function registerBundles()
+    public function registerBundles(): array
     {
         return [
             new PunchNevoboBundle(),
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
     }
 
@@ -29,7 +30,7 @@ class PunchNevoboBundleTestingKernel extends Kernel
 
 class NevoboClientTest extends TestCase
 {
-    public function testGetWords()
+    public function testGetWords(): void
     {
         $kernel = new PunchNevoboBundleTestingKernel('test', true);
         $kernel->boot();
