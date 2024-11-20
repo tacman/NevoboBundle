@@ -27,7 +27,8 @@
     "symfony/http-kernel": "^5.3|^6.0|^7.0",
     "symfony/serializer": "^5.3|^6.0|^7.0",
     "symfony/cache": "^5.3|^6.0|^7.0",
-    "symfony/cache-contracts": "^3.5"
+    "symfony/cache-contracts": "^3.5",
+    "symfony/http-client-contracts": "^3.5"
   },
   "require-dev": {
     "symfony/phpunit-bridge": "^5.3"
