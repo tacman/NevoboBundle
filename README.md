@@ -63,3 +63,7 @@ A: All variables and classes follow the names from the Nevobo API, blame them.
 
 A: First use `getPoules(<teamId>)`, then use `getPouleIndelingen(<pouleId>)` to get the standings.
 
+## Developers
+
+composer config repositories.tacman_nevobo '{"type": "path", "url": "/home/tac/g/tacman/NevoboBundle"}'
+composer require punch/nevobo-bundle:*@dev
